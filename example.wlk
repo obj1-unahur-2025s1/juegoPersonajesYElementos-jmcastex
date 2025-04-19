@@ -1,6 +1,15 @@
 object luisa {  
+var personajeActivo =floki
 
+method asignarPersonaje(personaje){
+  personajeActivo=personaje
+} 
 
+method personajeActivo() =personajeActivo 
+
+method aparece(elemento) {
+  self.personajeActivo().encontrar(elemento)
+}
 
 }
 
